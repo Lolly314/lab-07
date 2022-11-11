@@ -46,13 +46,13 @@ ggplot(evals, mapping = aes(x = score)) +
 plot_geom_point  <- ggplot(evals, aes(x = score,
                                       y = bty_avg)) +
                       geom_point()+
-                      labs(title = "Score to Bty Average",
+                      labs(title = "Score to Beauty Average",
                            subtitle = "Without Jitter")
 
 plot_geom_jitter <- ggplot(evals, aes(x = score,
                                        y = bty_avg))+
                             geom_point(position = "jitter")+
-                            labs(title = "Score to Bty Average",
+                            labs(title = "Score to Beauty Average",
                                   subtitle = "With Jitter")
 
 plot_geom_point + plot_geom_jitter
@@ -80,7 +80,15 @@ tidy(score_bty_fit)
 ### Exercise 4
 
 ```{r viz-score_bty_fit}
-# add your code here
+ggplot(evals, aes(x = score,
+                  y = bty_avg))+
+  geom_point(position = "jitter")+
+  labs(title = "Score to Beauty Average",
+       subtitle = "With Jitter")+
+  geom_smooth(method = "lm",
+              se = FALSE,
+              fullrange = TRUE,
+              aes(colour = "orange"))
 ```
 
 ### Exercise 5
