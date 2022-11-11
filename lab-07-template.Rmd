@@ -32,7 +32,7 @@ ggplot(evals, mapping = aes(x = score)) +
   geom_bar()
 ```
 
-*Add your narrative here.*
+*The graph is skewed to the right, meaning that the most courses were given a score between 4 and 5. From this graph we can also tell that the most common score for a course to be given is 4.4, closely followed by 4.5.*
 
 ### Exercise 2
 
