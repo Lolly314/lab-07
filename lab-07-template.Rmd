@@ -58,7 +58,7 @@ plot_geom_jitter <- ggplot(evals, aes(x = score,
 plot_geom_point + plot_geom_jitter
 ```
 
-Jittering the data shifts each data point slightly, so that overlapping data points can be more clearly representated individually.  The initial scatterplot was somewhat misleading, since many data points were overlapping, and thus the amount of data points in certain areas appeared to be less than what was actually there.
+*Add your narrative here.*
 
 ### Exercise 3
 
@@ -101,9 +101,9 @@ ggplot(evals, aes(x = score,
 
 ### Exercise 7
 
-```{r glance-score_bty_fit, eval = FALSE}
+```{r glance-score_bty_fit}
 # remove eval = FALSE from the code chunk options after filling in the blanks
-glance(___)
+glance(score_bty_fit)
 ```
 
 *Add interpretation of R-squared here.*
