@@ -58,7 +58,7 @@ plot_geom_jitter <- ggplot(evals, aes(x = score,
 plot_geom_point + plot_geom_jitter
 ```
 
-*Add your narrative here.*
+Jittering the data shifts each data point slightly, so that overlapping data points can be more clearly representated individually.  The initial scatterplot was somewhat misleading, since many data points were overlapping, and thus the amount of data points in certain areas appeared to be less than what was actually there.
 
 ### Exercise 3
 
